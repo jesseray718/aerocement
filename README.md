@@ -1,163 +1,153 @@
-<div align="center">
+# Aerocement: Open-Cellular Breathable Concrete & Passive Energy Systems
 
-# AEROCEMENT
-### Open-Source Passive Solar Thermal Technology
+**Inventor:** Jesse McMillen  
+**License:** Custom Royalty License (Free for Non-Commercial, Commercial License Required)  
+**Contact:** mcmillenjesse707@gmail.com  
+**Repository:** https://github.com/jesseray718/aerocement
 
-**Zero Fuel. Zero Grid. Zero Permission.**
+## Overview
 
-A carbon-infused foam cement that absorbs 98% of sunlight, wicks water without pumps, and turns a chimney into a power plant.
+Aerocement is an open-cellular, breathable cement composite designed for gaseous and liquid exchange through a capillary-like cellular structure. Unlike traditional concrete or closed-cell aircrete, Aerocement utilizes a unique thixotropic gel formulation and controlled mixing process to create a network of microscopic, interconnected pores.
 
-[![License](https://img.shields.io/badge/license-CERN--OHL--S%20v2.0-blue.svg)](./LICENSE_ROYALTY.md)
-[![Status](https://img.shields.io/badge/status-prototype-yellow.svg)]()
-[![Version](https://img.shields.io/badge/version-5.0.0-green.svg)]()
+This material serves as the foundation for a **Modular Passive Energy System**, enabling:
+1.  **Thermal Solar Collection:** High-absorption blackbody panels driving thermosiphon airflow.
+2.  **Geothermal Evaporative Cooling:** Passive air conditioning via subterranean capillary labyrinths.
+3.  **Mechanical/Electric Generation:** Integration with Stirling engines for zero-fuel power.
 
----
-
-| Cooling | Heating | Power |
-|:---:|:---:|:---:|
-| 40F Air Output | 100% Waste Heat Recovery | 131.8 kW @ 100ft |
-| No Compressor | Space and Water Heating | Stirling Mechanical Drive |
-
-</div>
+*Note: All performance metrics listed below are modeled estimates based on thermodynamic principles and are **(pending experimental validation)**.*
 
 ---
 
-## What It Does
+## Background & Attribution
 
-**The Material:** Porous open-cell cement infused with activated carbon. Absorbs 98% of sunlight like a blackbody. Draws water through itself like a sponge via capillary action. No pumps. No electricity.
+The foundational concept of using a gel-based surfactant to create foam concrete draws inspiration from **Nighthawkinlight's** aircrete technique (https://youtu.be/z4_GxPHwqkA).
 
-**The System:** Stack Aerocement panels into a solar chimney. Sun heats air inside. Hot air rises via Stack Effect. Draft drives a Stirling engine for mechanical power. Waste heat warms your home. Buried wet Aerocement tunnels cool air to 40F. Every joule used twice.
+**Distinct Innovation:**  
+While the base gel concept is inspired by existing open-source techniques, this project introduces novel modifications:
+*   **Open-Cell Capillary Architecture:** Formulation specifically tuned to collapse closed bubbles into an interconnected porous network, enabling fluid/gas exchange.
+*   **Blackbody Integration:** Incorporation of activated carbon into the matrix to achieve ~98% solar absorptivity (pending measurement).
+*   **System Integration:** Application of the material to a fully passive, scalable HVAC and energy generation loop.
 
----
-
-## System Diagram
-
-SUNLIGHT
-    |
-    v
-CHIMNEY heats air to 400F
-    |
-    +-----------+
-    v           v
-STIRLING    HOT EXHAUST
-ENGINE          |
-    |           v
-    v       S
-PACE HEATING
-MECHANICAL    HOT WATER
-POWER
-(Pumps, Tools,
- Alternator->Grid)
-
-GROUND (55F)
-    |
-    v
-WET TUNNEL
-    |
-    v
-40F COLD AIR
+These specific formulations, structural designs, and system integrations constitute the intellectual property of Jesse McMillen.
 
 ---
 
-## Performance (Simulation)
+## The Material: Aerocement Formula
 
-Based on thermodynamic modeling of a 100ft tower in 110F ambient conditions:
+### Phase 1: Thixotropic Gel
+*   **Xanthan Gum:** 15g
+*   **Isopropyl Alcohol (70%):** 200 ml
+*   **Dawn Ultra (Surfactant):** 50–100 ml (mixed into water to form a gel with near-zero slump)
+*   **Activated Carbon Powder:** 20–30g (Mixed into gel *first* to prevent lightening of the final composite)
+*   **Water:** Added to reach 1 L total volume
 
-Height: 8 ft
-Exit Temp: 180F
-Power: 3.17 kW
-Application: Single Home / Workshop
+### Phase 2: Aerocement Composite
+*   **Ratio:** 1 part Phase 1 Gel : 2 parts Portland Cement
+*   **Reinforcement (Optional):** 20–30g AR Glass Fiber per kg of cement
+*   **Critical Constraint:** **NO SAND**. Sand fills pores and destroys capillary action.
 
-Height: 16 ft
-Exit Temp: 200F
-Power: 7.0 kW
-Application: Large Home / Farm
+### Critical Process: From Closed to Open Cell
+1.  **Mixing:** Add cement in a steady stream while stirring with a paddle mixer on a drill (300–500 RPM).
+2.  **Visual Confirmation:** Stirring initially creates closed-cell bubbles. **Continue stirring** until bubbles begin to collapse/pop upon stopping. This indicates the transition to the desired **open-cell structure**.
+3.  **Timing:** Do not stop early (pores remain sealed). Do not over-stir (structure collapses). Pour immediately after the transition point.
 
-Height: 30 ft
-Exit Temp: 235F
-Power: 17.14 kW
-Application: Community Center
-
-Height: 50 ft
-Exit Temp: 285F
-Power: 39.88 kW
-Application: Small Village / Mine
-
-Height: 100 ft
-Exit Temp: 400F
-Power: 131.8 kW
-Application: Industrial / District Grid
-
-Key Finding: A single 100-foot tower generates 131.8 kW of mechanical power. This is sufficient to power ~40-50 households or operate heavy industrial machinery with zero fuel cost.
+### Curing Specifications
+*   **Initial Set:** 1–2 hours (fragile).
+*   **Handling Strength:** ≈50% at 2 days.
+*   **Curing Environment:** Moist-cure at 70–80°F with >90% humidity.
+*   **Full Strength:** Estimated 5–10 MPa at 4–6 weeks **(pending validation)**.
+*   **Load Bearing:** Do not apply structural loads until minimum 48 hours.
 
 ---
 
-## The Formula (Quick Start)
+## System 1: Modular Solar Thermal Array
 
-Phase 1: Thixotropic Gel (The Secret Sauce)
-Stabilizes the porous structure so it does not collapse.
-- 15g Xanthan Gum
-- 200ml Isopropyl Alcohol (70%+)
-- 1/4 cup Dawn Ultra (Surfactant)
-- Water to 1L total volume
+**Concept:** Sealed 8×4 ft panels containing blackbody Aerocement, driven by natural thermosiphon.
 
-Phase 2: Aerocement Composite
-- 1 part Portland Cement
-- 2 parts Fine Sand
-- 0.1 part Activated Carbon Powder (Blackbody absorber)
-- 20-30g AR Glass Fiber (per kg cement)
-- Phase 1 Gel (Add until workable consistency)
-
-Credit: Inspired by Nighthawkinlight kitchen aircrete technique.
+*   **Structure:** 4x8 ft sealed unit with a transparent polycarbonate face.
+*   **Absorber:** Internal channels filled with blackbody Aerocement (absorbs ~98% of solar energy **(pending measurement)**).
+*   **Flow Dynamics:** 4-inch inlet (bottom-left) and 4-inch outlet (top-right) on opposite corners.
+*   **Mechanism:** Hot air rises, creating a vacuum that draws air through the system without pumps.
+*   **Scalability:** Panels stack vertically (up to 40ft+) and connect horizontally. More units increase thermal output and airflow force.
+*   **Performance Target:** Outlet temperatures of 140°F+ to drive downstream systems **(pending validation)**.
 
 ---
 
-## License: CERN-OHL-S v2.0 (Strongly Reciprocal)
+## System 2: Geothermal Passive Evaporative Cooling
 
-This hardware is Open Source.
-- You CAN use, build, and sell products using this design.
-- You CAN modify the design.
-- You MUST share your improvements under the same license.
-- You CANNOT patent improvements derived from this work.
+**Concept:** A three-stage passive cooling loop utilizing earth temperature and capillary evaporation.
 
----
-
-## Mission
-
-To democratize energy abundance by releasing the Aerocement formula and Blackbody Solar Tower design as Community Commons. No patents. No gatekeepers. Just open science for the planet.
-
-"Energy is a human right. Knowledge should be too." -- Jesse McMillen
+1.  **Geothermal Pre-Conditioning:** Air passes through a 10ft-deep tunnel lined with moist Aerocement. Temperature stabilizes at ≈55°F (13°C) **(soil dependent)**.
+2.  **Desiccant Dehumidification:** Air is dried to ≈0% Relative Humidity (RH) using silica gel or zeolite, utilizing waste heat from the solar array.
+3.  **Evaporative Cooling:** Dry 55°F air flows over the wet, capillary-rich surface of the Aerocement labyrinth.
+    *   **Result:** Air temperature drops to ≈35°F (1.7°C), or 20°F below the surface temperature.
+    *   **Efficiency:** Zero electricity required. Performance is theoretically limited by the wet-bulb temperature.
 
 ---
 
-## Next Steps
+## System 3: Integrated Energy Loop
 
-1. Clone this repo.
-2. Build the 8ft prototype. (See docs/Prototype_Build_Plan.md)
-3. Upload your test data to the data folder.
-4. Join the movement.
+By combining the Solar Array and Cooling Labyrinth, a complete passive HVAC and power system is created:
 
-[Whitepaper](./docs/Whitepaper_Blackbody_Solar_Tower.md) | [Grant Proposal](./docs/Grant_Cover_Letter_DOE_SBIR.md) | [Pitch Deck](./docs/Pitch_Deck_Outline.md)
+*   **Airflow Path:** Ambient → Desiccant → Geothermal Tunnel → Conditioned Space → Solar Panel → Exhaust.
+*   **Power Generation:** The temperature differential between the hot solar exhaust and cool tunnel intake can drive a **Stirling Engine**.
+    *   **Output:** Mechanical energy (via flywheel/belt) for pumps or machinery.
+    *   **Electricity:** An alternator attached to the belt can generate supplemental electricity.
+*   **Storage:** Excess heat can be stored in super-insulated earth masses for night-time or winter operation.
+*   **Scale:** From a single off-grid home to a village-scale microgrid.
 
-## 🧱 Material Credit & Reference
+---
 
-The **open-cell aerated cement** recipe used in this project is based on the work of **NightHawkInLight**. His method of using xanthan gum and dish soap to create stable foam in cement is the foundation for the material used throughout this system.
+## Licensing & Intellectual Property
 
-**🙏 Full Credit To:**
-- **YouTube Channel:** [NightHawkInLight](https://www.youtube.com/@NightHawkInLight)
-- **Recipe Demo Video:** ["Perfect Aircrete, Kitchen Ingredients"](https://www.youtube.com/watch?v=z4_GxPHwqkA) — Watch this for a complete demonstration of the mixing method, foam stabilization, and the open-cell vs closed-cell transition.
+### Open Source with Commercial Royalty
+This project is released under a custom license designed to democratize access while protecting the inventor's rights for further development.
 
-**What NightHawkInLight Created:**
-- The xanthan gum + dish soap + cement foam stabilization method
-- Demonstrating the transition from closed-cell to open-cell aerated concrete
-- Making aircrete accessible with grocery store ingredients
+*   **✅ FREE for Non-Commercial Use:** Education, personal projects, non-profits, and community building.
+*   **⚠️ COMMERCIAL USE REQUIRED:** Any commercial product, service, or derivative selling for profit requires a written license agreement with royalty payments to Jesse McMillen.
+*   **Contact:** mcmillenjesse707@gmail.com for licensing inquiries.
 
-**What This Project Adds (Jesse McMillen):**
-- Activated carbon blackbody integration into the aerocement matrix
-- Modular 8×4 thermosiphon solar thermal panel design using blackbody aerocement
-- Geothermal passive evaporative cooling labyrinth using aerocement's capillary structure
-- Desiccant pre-drying + fully passive (zero-electricity) airflow driven only by thermosiphon
-- Complete integrated energy system: heating, cooling, Stirling engine power, and electrical generation
-- Scale from single off-grid home to megalopolis
+*Note: This is NOT a CERN-OHL-S license. Standard open-source licenses allowing free commercial use conflict with the royalty model required to fund further R&D.*
 
-**Bottom line:** NightHawkInLight made the brick. Jesse McMillen figured out how to build a passive civilization with it.
+### Patent Status
+*   **Defensive Publication:** This repository serves as a public disclosure establishing prior art.
+*   **Patent Pending:** A provisional patent application is planned pending experimental validation data.
+
+---
+
+## Current Status & Roadmap
+
+### ✅ Completed
+*   Material formulation and theoretical modeling.
+*   System architecture design.
+*   GitHub repository structure and documentation.
+*   Custom royalty license definition.
+
+### ⬜ In Progress / Pending Validation
+*   **Prototype V1 Construction:** Building a functional 8x4 panel and 10ft tunnel system.
+*   **Data Collection:** Verifying thermosiphon flow rates, cooling delta-T, and material strength.
+*   **Whitepaper Expansion:** Developing full thermodynamic derivations and economic analysis.
+*   **Zenodo DOI:** Uploading final whitepaper for permanent timestamp.
+
+### 🎯 Grant Targets
+We are actively seeking funding to validate the physics and scale production:
+1.  **Buckminster Fuller Challenge** ($100k)
+2.  **NSF SBIR Phase I** ($275k)
+3.  **DOE ARPA-E** (Breakthrough Energy Tech)
+
+---
+
+## Contributing & Collaboration
+
+We welcome collaboration from universities, researchers, and makers to:
+*   Validate the capillary flow physics.
+*   Optimize the mixing process for different climates.
+*   Test long-term durability and freeze-thaw cycles.
+
+**Please Note:** All experimental data shared must be clearly labeled as "preliminary" or "unverified" until peer-reviewed.
+
+---
+
+## Disclaimer
+
+*This project involves construction and experimentation with materials and thermal systems. Users assume all risks associated with building and testing. The inventor is not liable for injuries or damages resulting from the use of this information. Always follow local building codes and safety guidelines.*
