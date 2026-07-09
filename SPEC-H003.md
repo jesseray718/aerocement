@@ -53,10 +53,13 @@ Ask: Lab procedure + predictive pump pressure model. Time: 5-8 hrs.
 
 ## Data Package
 - Validated Dataset: https://doi.org/10.5281/zenodo.21225683
+- Latest Release: https://doi.org/10.5281/zenodo.21271517
+- Latest IPFS: https://ipfs.io/ipfs/QmZmfrSwck8uuEuJGnULecUDW3mCn3gcAYfF97Ccffua9L
 - Initial Dataset: https://doi.org/10.5281/zenodo.21210931
 - Main Repo: https://github.com/jesseray718/openroot
 - Thermal Repo: https://github.com/jesseray718/aerocement
-- IPFS: QmVJxfQmFoTVDp1GRui8bEKJ7x7J154h8RX3EmxQBcCrBt
+- IPFS: QmZmfrSwck8uuEuJGnULecUDW3mCn3gcAYfF97Ccffua9L (v0.6)
+-    IPFS: QmVJxfQmFoTVDp1GRui8bEKJ7x7J154h8RX3EmxQBcCrBt (v0.5)
 - Sim Code: research/thermal-systems/thermal_cascade_v2.py
 - Spec Docs: WBTE-01.md, CTBS-01.md, AE-GFRC-01.md
 
