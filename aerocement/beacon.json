@@ -1,0 +1,65 @@
+{
+  "name": "aerocement",
+  "tagline": "Lightweight foamed concrete with alkali-resistant fiber, mixable with a drill and a bucket.",
+  "description": "AR-GFRC aerocement: open-source foamed concrete targeting >=3 MPa compressive / >=1.5 MPa flexural at <=1000 kg/m3, load-matched to single-story walls. Failures are documented on purpose.",
+  "version": "0.1.0",
+  "gh_owner": "jesseray718",
+  "gh_repo": "aerocement",
+  "repo_url": "https://github.com/jesseray718/aerocement",
+  "docs_url": "https://github.com/jesseray718/aerocement#readme",
+  "bom_url": "https://github.com/jesseray718/aerocement/blob/main/BOM.md",
+  "instructions_url": "https://github.com/jesseray718/aerocement/blob/main/BUILD.md",
+  "philosophy_url": "PHILOSOPHY.md",
+  "doi": "10.5281/zenodo.20639511",
+  "image": "",
+  "intended_use": "Low-cost, owner-built single-story walls and small structures in resource-constrained settings.",
+  "development_stage": "prototype",
+  "repo_description": "Open-source lightweight foamed concrete (AR-GFRC) for single-story walls. Drill-and-bucket buildable.",
+  "topics": [
+    "appropriate-technology",
+    "open-source-hardware",
+    "foamed-concrete",
+    "gfrc",
+    "permaculture",
+    "off-grid",
+    "construction-materials"
+  ],
+  "keywords": [
+    "aerocement",
+    "foamed concrete",
+    "AR-GFRC",
+    "appropriate technology",
+    "open hardware",
+    "cellular concrete",
+    "natural building"
+  ],
+  "licenses": {
+    "hardware": "CC-BY-SA-4.0",
+    "documentation": "CC-BY-SA-4.0",
+    "software": "GPL-3.0-or-later"
+  },
+  "licensor": {
+    "name": "Jesse McMillen",
+    "email": "jrm8908@proton.me",
+    "affiliation": "One Human Family / OpenRoot"
+  },
+  "health_safety": "Cement is caustic: wear gloves and eye protection. Cut glass fiber irritates skin and lungs: wear a mask when handling dry fiber. Test batches only; no structural use until independently validated.",
+  "validated": [
+    "Fiber content must stay <=1.5% to avoid foam collapse",
+    "E-glass degrades in alkali; use zirconia (AR) or basalt fiber",
+    "Low elastic modulus: suspended spans are impractical"
+  ],
+  "theoretical": [
+    ">=3 MPa compressive at <=1000 kg/m3 (target, not yet measured)",
+    ">=1.5 MPa flexural at <=1000 kg/m3 (target, not yet measured)"
+  ],
+  "known_errors": [
+    {
+      "id": "H-003-RAD-10X",
+      "title": "H-003 radiative-capture headline overstated \\~10x (likely decimal/units error)",
+      "summary": "The published H-003 thermal cascade headline figure for radiative capture appears inflated by roughly one order of magnitude due to a decimal or units slip. The physically realistic ceiling is far lower.",
+      "resolution": "A 1-2 m2 instrumented test at Sikeston climate per the three written protocols, with raw data published win or lose. Until then: do not cite the headline number anywhere.",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+'''aerocement''' is lightweight foamed concrete with alkali-resistant fiber, mixable with a drill and a bucket.
+
+AR-GFRC aerocement: open-source foamed concrete targeting >=3 MPa compressive / >=1.5 MPa flexural at <=1000 kg/m3, load-matched to single-story walls. Failures are documented on purpose.
+
+== Status ==
+Development stage: '''prototype'''. This project documents failures and open errors publicly, on purpose (falsification-first).
+
+== What is validated vs. what is theoretical ==
+''Validated by experiment or established materials science:''
+* Fiber content must stay <=1.5% to avoid foam collapse
+* E-glass degrades in alkali; use zirconia (AR) or basalt fiber
+* Low elastic modulus: suspended spans are impractical
+
+''Targets not yet physically validated -- do not cite as results:''
+* >=3 MPa compressive at <=1000 kg/m3 (target, not yet measured)
+* >=1.5 MPa flexural at <=1000 kg/m3 (target, not yet measured)
+
+== Known errors (open) ==
+* '''H-003 radiative-capture headline overstated \~10x (likely decimal/units error)''' -- The published H-003 thermal cascade headline figure for radiative capture appears inflated by roughly one order of magnitude due to a decimal or units slip. The physically realistic ceiling is far lower.
+
+== Build one ==
+# Read the bill of materials: https://github.com/jesseray718/aerocement/blob/main/BOM.md
+# Mix a 1-liter test batch and record your ratios.
+# Post a photo and your ratios in the project's GitHub Discussions -- an independent test batch is the single most valuable contribution right now.
+
+== Safety ==
+Cement is caustic: wear gloves and eye protection. Cut glass fiber irritates skin and lungs: wear a mask when handling dry fiber. Test batches only; no structural use until independently validated.
+
+== Licensing ==
+* Hardware designs: CC-BY-SA-4.0
+* Documentation: CC-BY-SA-4.0
+* Software: GPL-3.0-or-later
+Copyright is attributed to "One Human Family". Zero patents; the design is born free.
+
+== Links ==
+* Source repository: https://github.com/jesseray718/aerocement
+* Archived record (DOI): https://doi.org/10.5281/zenodo.20639511
+
+[[Category:Appropriate technology]]
+[[Category:Construction]]
+[[Category:Building materials]]
+[[Category:Open source hardware]]
