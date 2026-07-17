@@ -1,0 +1,26 @@
+[
+  {
+    "task_id": "task_acre_v02",
+    "team": "team_gamma",
+    "work_units": 2.5,
+    "timestamp": "2026-07-14T14:12:29-05:00",
+    "verified": false,
+    "source": "scheduler_v2"
+  },
+  {
+    "task_id": "task_h003",
+    "team": "team_alpha",
+    "work_units": 2.5,
+    "timestamp": "2026-07-14T14:12:29-05:00",
+    "verified": false,
+    "source": "scheduler_v2"
+  },
+  {
+    "task_id": "task_une_sync",
+    "team": "team_beta",
+    "work_units": 1.0,
+    "timestamp": "2026-07-14T14:12:30-05:00",
+    "verified": false,
+    "source": "scheduler_v2"
+  }
+]

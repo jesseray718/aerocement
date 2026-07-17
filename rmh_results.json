@@ -1,0 +1,11 @@
+{
+  "carnot_ceiling": 63.86,
+  "rmh_thermal_kw": 11.51,
+  "stirling_shaft_kw": 4.03,
+  "wheel_power_kw": 3.34,
+  "salt_storage_kwh": 33.02,
+  "est_range_hours": 1.91,
+  "est_range_km": 86.1,
+  "fuel_rate_kg_h": 2.5,
+  "fuel_carbon_status": "carbon-negative (coppice roots sequester)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "task_acre_v02",
+  "name": "Automate ACRE tokenomics v0.2: PoPW work_units → verified compute mint, quadratic DAO hooks",
+  "priority": "high",
+  "expertise": "tokenomics",
+  "dependencies": ["task_h003"]
+}
