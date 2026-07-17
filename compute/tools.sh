@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/bash
+echo "Available OpenRoot tools:"
+echo "  monitor_state.py          - Current device state (RAM/CPU/battery)"
+echo "  ledger_log.py <task>      - Log verified computational work to PoPW"
+echo "  measure_llm_efficiency.py - Tokens, joules, usefulness per inference"
+echo "  efficiency.py             - Highest leverage variable for PoPW/ACRE"
+echo "  fractal-scale 1 <query>   - Run C1 swarm loop"
+echo ""
+echo "Example calls from Kai9000 sandbox:"
+echo "  python3 $HOME/bin/compute_n0/ledger_log.py 'tested solar thermal priority'"
+echo "  python3 $HOME/bin/compute_n0/measure_llm_efficiency.py"

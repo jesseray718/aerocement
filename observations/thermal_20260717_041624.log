@@ -1,0 +1,9 @@
+=== L0_THERMAL_UNIT_COMPLETE ===
+timestamp=2026-07-17T04:16:24-05:00
+input_kwh_per_m2=12.91
+efficiency_pct=82.98
+status=captured
+baseline_kwh=0
+output_file=/data/data/com.termux/files/home/openroot/observations/thermal_20260717_041624.log
+node=H-003
+system=OpenRoot AeroCement PoPW

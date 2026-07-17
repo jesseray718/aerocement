@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -euo pipefail
+QUERY="${1:-self-aware optimization for H-003}"
+echo "=== C1 SelfAwareReasoner ==="
+echo "Query: $QUERY"
+python3 $HOME/bin/compute_n0/monitor_state.py
+python3 $HOME/bin/compute_n0/align_goal.py "$QUERY"
+python3 $HOME/bin/compute_n0/critique_output.py "$QUERY"
+$HOME/bin/compute_n0/ledger_log.py "$QUERY verified computational step"
+echo "=== C1 complete — output ready for Σ / higher fractal levels ==="
