@@ -1,9 +1,25 @@
-data/*.csv
+
+# Core Exclusions
+vendor_archive/
+quarantine/
+backups/
+logs/
+fair/*.jsonl
+*.log
+autonomous_daemon.log
+autonomous_report.json
+autonomous_snapshot.json
+autonomous_ledger.jsonl
+
+# Python Cache
 __pycache__/
 *.pyc
-.DS_Store
-swarm/audits/
+
+# Large Binaries
 *.gguf
-build/
-__pycache__/
-*.tmp
+*.bin
+*.pth
+*.pt
+
+# Submodules
+meta_hub/

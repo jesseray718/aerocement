@@ -1,0 +1,9 @@
+data/*.csv
+__pycache__/
+*.pyc
+.DS_Store
+swarm/audits/
+*.gguf
+build/
+__pycache__/
+*.tmp
