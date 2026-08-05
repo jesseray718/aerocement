@@ -53,5 +53,5 @@ results = {
 
 print(json.dumps(results, indent=2))
 
-with open("os.path.expanduser("~") + "/"openroot/rmh_results.json", "w") as f:
+    with open(os.path.expanduser("~/openroot/rmh_results.json"), "w") as f:
     json.dump(results, f, indent=2)
