@@ -2,7 +2,7 @@
 """
 data_logger_v0.3 — Termux/A15 ready for H-003 Node Zero validation
 Simulated sensors (easy to swap for real DS18B20 + DHT22)
-Logs to /storage/emulated/0/Documents/openroot-data/
+Logs to os.environ.get("ANDROID_STORAGE", "/storage/emulated/0") + "/"Documents/openroot-data/
 Produces .jsonl + summary.csv usable as ACRE evidence
 """
 
@@ -13,7 +13,7 @@ import csv
 import time
 import random
 
-LOG_DIR = "/storage/emulated/0/Documents/openroot-data"
+LOG_DIR = "os.environ.get("ANDROID_STORAGE", "/storage/emulated/0") + "/"Documents/openroot-data"
 os.makedirs(LOG_DIR, exist_ok=True)
 
 DATE = datetime.date.today().isoformat()

@@ -3,7 +3,7 @@ import sys
 import os
 
 # Add the openroot directory to Python path
-sys.path.insert(0, '/data/data/com.termux/files/home/openroot')
+sys.path.insert(0, 'os.path.expanduser("~") + "/"openroot')
 
 try:
     from une_client import UNEClient
@@ -16,6 +16,6 @@ try:
 except ImportError as e:
     print(f"Import error: {e}")
     print("Available files in openroot:")
-    os.system("ls -la /data/data/com.termux/files/home/openroot/*.py")
+    os.system("ls -la os.path.expanduser("~") + "/"openroot/*.py")
 except Exception as e:
     print(f"Runtime error: {e}")

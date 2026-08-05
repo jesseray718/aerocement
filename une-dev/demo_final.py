@@ -5,7 +5,7 @@ Shows complete workflow from entity creation to ACRE validation
 """
 
 import sys
-sys.path.insert(0, '/data/data/com.termux/files/home/openroot')
+sys.path.insert(0, 'os.path.expanduser("~") + "/"openroot')
 
 from une_client_updated import UNEClient
 import requests

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /data/data/com.termux/files/home/openroot
+cd $HOME/openroot
 echo "Starting UNE Server on port 5001..."
 python une_server.py &
 sleep 2

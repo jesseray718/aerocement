@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import time
-sys.path.insert(0, '/data/data/com.termux/files/home/openroot')
+sys.path.insert(0, 'os.path.expanduser("~") + "/"openroot')
 
 from une_client import UNEClient
 
