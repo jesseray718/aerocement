@@ -1,57 +1,73 @@
-import json
-import math
+import json, math
 
 # Rocket Mass Heater + Molten Salt Thermal Storage Vehicle Model
-# Hot side: RMH with molten salt at T_hot
-# Cold side: ambient airflow radiator at T_cold
-# Fuel: coppiced black locust (carbon-negative)
+# FIXED: Correctly calculates net power and range considering continuous input
 
-# --- Parameters ---
-T_hot = 538 + 273.15      # molten salt max temp (°C → K), typical solar salt
-T_cold = 293.15           # ambient air (~20°C)
-stirling_eff = 0.35        # Stirling engine mechanical efficiency
-gen_eff = 0.92             # alternator efficiency
-motor_eff = 0.90           # electric motor efficiency
-salt_cp = 1530             # J/(kg·K) molten salt specific heat
-salt_mass = 150            # kg of molten salt onboard
-black_locust_LHV = 19.5e6  # J/kg dry black locust lower heating value
-burn_rate = 2.5            # kg/h fuel consumption
-rmh_eff = 0.85             # rocket mass heater combustion+transfer efficiency
+T_hot = 538 + 273.15  # molten salt max temp (K)
+T_cold = 293.15       # ambient (K)
+stirling_eff = 0.35
+gen_eff = 0.92
+motor_eff = 0.90
+salt_cp = 1530        # J/(kg·K)
+salt_mass = 150       # kg
+black_locust_LHV = 19.5e6  # J/kg
+burn_rate = 2.5       # kg/h
+rmh_eff = 0.85
 
-# --- Carnot ceiling ---
+# Carnot ceiling
 carnot = 1 - (T_cold / T_hot)
 
-# --- Energy available in salt reservoir ---
+# Energy in salt reservoir
 dT = T_hot - T_cold
-salt_energy = salt_mass * salt_cp * dT  # Joules stored
+salt_energy = salt_mass * salt_cp * dT
 
-# --- RMH thermal input ---
-rmh_thermal_power = burn_rate * black_locust_LHV * rmh_eff / 3600  # Watts
+# RMH Thermal Input (Watts)
+rmh_thermal_power = burn_rate * black_locust_LHV * rmh_eff / 3600
 
-# --- Stirling shaft power ---
+# Wheel Power Output (Watts)
 stirling_shaft = rmh_thermal_power * stirling_eff
-
-# --- Wheel power ---
 wheel_power = stirling_shaft * gen_eff * motor_eff
 
-# --- Range estimate (assume 5 kW average draw at wheels) ---
+# Demand
 avg_draw = 5000  # Watts
-range_hours = salt_energy / (avg_draw / (stirling_eff * gen_eff * motor_eff)) / 3600
-range_km = range_hours * 45  # assume 45 km/h avg
+
+# Net Power (Positive = Charging, Negative = Discharging)
+net_power = wheel_power - avg_draw
+
+# Range Calculation
+if net_power >= 0:
+    range_hours = float('inf')
+    status = "Self-Sustaining (Net Positive)"
+else:
+    # Time until salt depletes covering the deficit
+    deficit = abs(net_power)
+    range_hours = salt_energy / (deficit * 3600)
+    status = f"Deficit Mode ({deficit:.0f}W drain)"
 
 results = {
     "carnot_ceiling": round(carnot * 100, 2),
     "rmh_thermal_kw": round(rmh_thermal_power / 1000, 2),
     "stirling_shaft_kw": round(stirling_shaft / 1000, 2),
     "wheel_power_kw": round(wheel_power / 1000, 2),
+    "avg_draw_kw": round(avg_draw / 1000, 2),
+    "net_power_kw": round(net_power / 1000, 2),
     "salt_storage_kwh": round(salt_energy / 3.6e6, 2),
-    "est_range_hours": round(range_hours, 2),
-    "est_range_km": round(range_km, 1),
-    "fuel_rate_kg_h": burn_rate,
+    "est_range_hours": round(range_hours, 2) if range_hours != float('inf') else "INF",
+    "status": status,
     "fuel_carbon_status": "carbon-negative (coppice roots sequester)"
 }
 
 print(json.dumps(results, indent=2))
+<<<<<<< HEAD
 
     with open(os.path.expanduser("~/openroot/rmh_results.json"), "w") as f:
     json.dump(results, f, indent=2)
+=======
+# Try to save to openroot, fallback to local dir
+try:
+    with open("/data/data/com.termux/files/home/openroot/rmh_results.json", "w") as f:
+        json.dump(results, f, indent=2)
+except:
+    with open("rmh_results.json", "w") as f:
+        json.dump(results, f, indent=2)
+>>>>>>> b1379a0 (cycle:20260805-232139 [auto])
