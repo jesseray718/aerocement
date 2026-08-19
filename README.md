@@ -1,12 +1,21 @@
-# OpenRoot — Jesse McMillen
+# aerocement
 
-**Operating Law**: Maximum systemic benefit per unit of human effort.  
-**Vision**: Zero-credit cash-only bootstrap → 50-node decentralized cooperative with AE-GFRC production, recycling-to-compute, equal profit/asset sharing, 501c3 feedback, fractal AI coordination, and community wealth recapture.
+**Open-source lightweight foamed / open-cell concrete (AR-GFRC oriented) for the OpenRoot lattice.**
 
-This repo is the living DAO foundation for work ledgers (PoPW), specialized sublets, and recapturing exploited streams back into the nodes.
+## What this is
+Material and construction system for single-story and appropriate-technology building. Focused on drill-and-bucket scale methods, open-cell thermal mass properties, and integration with passive solar and cooling designs.
 
-See [USER_MANUAL.md](docs/USER_MANUAL.md)  
-See [INDEX.md](index/INDEX.md)  
-See [GLOSSARY.md](glossary/GLOSSARY.md)
+## Role in the Lattice
+Primary physical material spoke. Provides the volumetric thermal mass and structural medium used by Node Zero and related thermal systems.
 
-Current status: Personal 1% util credit track + Mercury/DUNS business track + AE-GFRC + recycling node + floating widget tasker active.
+## Bigger Picture
+OpenRoot treats materials, energy, and coordination as one problem. A reproducible, low-tech, high-surface-area material that can store and move heat is a concrete way to increase useful capacity without continuous external power.
+
+## Current Status
+Active. Design and build methods are public; physical iteration continues.
+
+## Related
+- [openroot](https://github.com/jesseray718/openroot)
+- [OpenCell-Thermal-System](https://github.com/jesseray718/OpenCell-Thermal-System)
+- [AeroCement_Ecosystem](https://github.com/jesseray718/AeroCement_Ecosystem)
+- [black-locust-rmh](https://github.com/jesseray718/black-locust-rmh)
