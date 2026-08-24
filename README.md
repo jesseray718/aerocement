@@ -19,3 +19,13 @@ Active. Design and build methods are public; physical iteration continues.
 - [OpenCell-Thermal-System](https://github.com/jesseray718/OpenCell-Thermal-System)
 - [AeroCement_Ecosystem](https://github.com/jesseray718/AeroCement_Ecosystem)
 - [black-locust-rmh](https://github.com/jesseray718/black-locust-rmh)
+
+## Integration
+
+This repo is part of the [OpenRoot unified architecture](https://github.com/jesseray718/openroot/blob/main/UNIFIED_ARCHITECTURE.md).
+
+**Role:** Materials layer (SPEC-H-001, H-002, H-003 — volumetric blackbody thermal cascade)
+
+**Connected repos:**
+- [openroot](https://github.com/jesseray718/openroot) — Physical infrastructure (credit, property, thermal, permaculture)
+- [une](https://github.com/jesseray718/une) — Computational substrate (Agape engines, η tracking, thermodynamic ledgers)
