@@ -29,7 +29,7 @@ jobs:
           echo "η = 1.0" >> eta_output.txt
 
       - name: Upload η Metric
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: eta-metrics
           path: eta_output.txt
