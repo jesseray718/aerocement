@@ -29,3 +29,6 @@ This repo is part of the [OpenRoot unified architecture](https://github.com/jess
 **Connected repos:**
 - [openroot](https://github.com/jesseray718/openroot) — Physical infrastructure (credit, property, thermal, permaculture)
 - [une](https://github.com/jesseray718/une) — Computational substrate (Agape engines, η tracking, thermodynamic ledgers)
+
+## Knowledge Integration
+See `docs/knowledge/`.
