@@ -1,3 +1,4 @@
+[![Sponsor](https://img.shields.io/badge/Sponsor-this_project-ff69b4?logo=github&style=for-the-badge)](https://github.com/sponsors/jesseray718)
 # aerocement
 
 **Open-source lightweight foamed / open-cell concrete (AR-GFRC oriented) for the OpenRoot lattice.**
@@ -29,3 +30,29 @@ This repo is part of the [OpenRoot unified architecture](https://github.com/jess
 **Connected repos:**
 - [openroot](https://github.com/jesseray718/openroot) — Physical infrastructure (credit, property, thermal, permaculture)
 - [une](https://github.com/jesseray718/une) — Computational substrate (Agape engines, η tracking, thermodynamic ledgers)
+
+## 🚀 Start Here
+
+**New to this project?** Start with these resources:
+
+- 📖 **[Full Documentation](../../wiki)** - Complete guides and tutorials
+- 💬 **[Discussions](../../discussions)** - Ask questions, share builds
+- 🎥 **[Video Tutorials](https://youtube.com/@YourChannel)** - (Coming soon - subscribe for updates!)
+- 💰 **[Support This Work](https://github.com/sponsors/jesseray718)** - Become a sponsor
+
+---
+
+
+## 🔗 Related Projects
+
+This is part of the **OpenRoot Ecosystem**:
+
+| Project | Description |
+|---------|-------------|
+| [AeroCement](../aerocement) | Triple-utility solar-thermal concrete panels |
+| [OpenRoot](../openroot) | Ferrocement domes + thermal labyrinths |
+| [Wisdom Scaffold](../wisdom-scaffold) | Ancient wisdom + computation frameworks |
+| [Renaissance Protocol](../renaissance-protocol) | Proof-of-work for physical labor |
+
+---
+
