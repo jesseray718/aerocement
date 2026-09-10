@@ -144,3 +144,15 @@ Full: https://creativecommons.org/licenses/by-sa/4.0/
 ---
 
 *Last updated: September 2026 | Version: 1.0.0*
+
+---
+
+## 🏗️ Community Builds
+
+**Have you built AeroCement?** Share your project!
+
+- Post photos in [Discussions](../../discussions)
+- Tag [@jesseray718](https://github.com/jesseray718) on social media
+- Get featured in the README
+
+*Community builds coming soon - be the first!*
