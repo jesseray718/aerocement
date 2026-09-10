@@ -1,4 +1,6 @@
 # 🌞 AeroCement
+[![GitHub stars](https://img.shields.io/github/stars/jesseray718/aerocement?style=social)](https://github.com/jesseray718/aerocement/stargazers)
+
 
 **Triple-utility passive solar-thermal concrete system**
 
