@@ -13,7 +13,11 @@ import csv
 import time
 import random
 
-LOG_DIR = "os.environ.get("ANDROID_STORAGE", "/storage/emulated/0") + "/"Documents/openroot-data"
+LOG_DIR = os.path.join(
+    os.environ.get("ANDROID_STORAGE", "/storage/emulated/0"),
+    "Documents",
+    "openroot-data",
+)
 os.makedirs(LOG_DIR, exist_ok=True)
 
 DATE = datetime.date.today().isoformat()
