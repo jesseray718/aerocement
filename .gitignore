@@ -16,3 +16,16 @@ ENDOFBRIDGE
 session_seeds
 ledger/live
 context_bridge/context.json
+
+# --- hygiene (added by overhaul R-4) ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.pid
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
