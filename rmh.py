@@ -58,16 +58,10 @@ results = {
 }
 
 print(json.dumps(results, indent=2))
-<<<<<<< HEAD
-
-    with open(os.path.expanduser("~/openroot/rmh_results.json"), "w") as f:
-    json.dump(results, f, indent=2)
-=======
 # Try to save to openroot, fallback to local dir
 try:
     with open("/data/data/com.termux/files/home/openroot/rmh_results.json", "w") as f:
         json.dump(results, f, indent=2)
-except:
+except OSError:
     with open("rmh_results.json", "w") as f:
         json.dump(results, f, indent=2)
->>>>>>> b1379a0 (cycle:20260805-232139 [auto])
