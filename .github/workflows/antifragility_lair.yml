@@ -13,7 +13,11 @@ jobs:
   lair:
     runs-on: ubuntu-latest
     steps:
+ overhaul/ci-antifragility
+      - uses: actions/checkout@v4
+=======
       - uses: actions/checkout@v7
+ main
 
       - name: yaml-parse guard (blocking)
         run: |
